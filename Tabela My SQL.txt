@@ -1,0 +1,34 @@
+--criação do banco de dados--
+CREATE DATABASE db_zero_to_hero
+USE db_zero_to_hero
+
+--criação de duas tabelas
+CREATE TABLE db_zero_to_hero (
+  Users varchar(20),
+  coments (100)
+);
+CREATE TABLE id_dos_usuarios(
+  id int;
+
+)
+
+--inserindo dados na tabela--
+INSERT INTO db_zero_to_hero (users, coments)
+VALUES ('jane1','blabalbla');
+
+
+--selecionando toda uma linha--
+SELECT * FROM db_zero_to_hero
+WHERE users IN ('Jane1');
+
+--deletando um iten da coluna users--
+DELETE FROM db_zero_to_hero 
+WHERE users ='jane1';
+
+--inserindo um novo usuario da coluna users--
+UPDATE db_zero_to_hero SET users WHERE = Jane3;
+
+--juntando tabelas com JOINS--
+SELECT * FROM db_zero_to_hero
+INNER JOIN id_dos_usuarios
+ON db_zero_to_hero.id_dos_usuarios = id_dos_usuarios.db_zero_to_hero;
